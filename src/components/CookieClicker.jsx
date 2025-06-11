@@ -11,7 +11,7 @@ function CookieClicker() {
     <div className="widget-card">
       <h2>Cookie Clicker</h2>
       <img
-        src="/cookie.png"
+        src="cookie.png"
         alt="cookie"
         className="cookie-image"
         onClick={handleClick}
