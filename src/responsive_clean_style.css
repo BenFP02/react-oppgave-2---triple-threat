@@ -1,0 +1,130 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: system-ui, sans-serif;
+  background-color: #f2f5f9;
+  color: #222;
+  min-height: 100vh;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+main {
+  width: 100%;
+  max-width: 1400px;
+  display: flex;
+  justify-content: center;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.widget-card {
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 400px;
+  height: 800px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: flex-start;
+  overflow: hidden;
+}
+
+.widget-card h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.cat-facts-list,
+.user-list {
+  flex-grow: 1;
+  min-height: 0;
+  overflow-y: auto;
+  margin-top: 1rem;
+  padding: 0.5rem;
+  background-color: #f8fafc;
+  border-radius: 6px;
+  border: 1px solid #e0e0e0;
+  list-style: none;
+  width: 100%;
+}
+
+.cat-facts-list ul,
+.user-list ul {
+  padding-left: 1rem;
+}
+
+.cat-facts-list li,
+.user-list li {
+  margin-bottom: 0.75rem;
+  text-align: center;
+  line-height: 1.5;
+}
+
+.user-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+  width: 100%;
+  align-items: center;
+}
+
+.user-form input {
+  width: 90%;
+  max-width: 300px;
+  padding: 0.5rem;
+}
+
+button {
+  background-color: #0077cc;
+  color: white;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.2s ease;
+  display: block;
+  margin: 0 auto 1rem auto;
+}
+
+button:hover {
+  background-color: #005fa3;
+}
+
+.cookie-image {
+  width: 100px;
+  height: 100px;
+  cursor: pointer;
+  margin: 0 auto;
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .app-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .widget-card {
+    width: 100%;
+    max-width: 400px;
+  }
+}
